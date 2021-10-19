@@ -25,3 +25,40 @@
 #container a {
   text-decoration: none;
 }
+
+// Añadir a partir de aca
+
+ion-content{
+  max-height: 1200px;
+  background-color: white;
+}
+
+#logo{
+
+  padding: 40px;
+  
+  img{
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+  }
+}
+
+#botones{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  .blanco{
+    border: 3px solid black;
+    border-radius: 5px;
+  }
+
+  ion-button{
+    width: 250px;
+    height: 45px;
+  }
+}
