@@ -12,4 +12,6 @@ export class RegistrarsePage implements OnInit {
   ngOnInit() {
   }
 
+  
+
 }

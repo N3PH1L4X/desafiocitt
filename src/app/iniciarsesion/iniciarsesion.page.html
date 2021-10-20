@@ -1,9 +1,34 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>iniciarsesion</ion-title>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-title>Inicio de sesion</ion-title>
+
+    <!-- Boton para regresar, se muestra solo si hay historial -->
+		<ion-buttons slot="start">
+			<ion-back-button icon="arrow-back"></ion-back-button>
+		</ion-buttons>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>
+	<ion-text color="dark">
+		<h1>Ingresar datos</h1>
+	</ion-text>
 
+	<!-- Formulario -->
+	<form action="iniciarSesion()">
+		<ion-item>
+			<ion-label>Correo electronico</ion-label>
+			<ion-input type="text" placeholder="ejemplo@ripley.com"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Contraseña</ion-label>
+			<ion-input
+				type="password"
+				placeholder="¡Piensa una contraseña fuerte!"
+			></ion-input>
+		</ion-item>
+		<ion-button expand="block" shape="round">
+			Iniciar sesion
+		</ion-button>
+	</form>
 </ion-content>
