@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-iniciarsesion',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IniciarsesionPage implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) {}
 
   ngOnInit() {
+  }
+
+  irPaginaPrincipal(){
+    this.route.navigate(['paginaprincipal']);
   }
 
 }

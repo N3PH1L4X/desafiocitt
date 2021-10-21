@@ -1,0 +1,28 @@
+/* Without setting height the slides will take up the height of the slide's content */
+ion-slides {
+	margin-top: 10px;
+	max-height: 45%;
+
+	ion-slide {
+		ion-card {
+			height: 250px;
+			min-width: 350px;
+
+			img {
+				height: 200px;
+			}
+		}
+	}
+}
+
+ion-toolbar {
+	padding-right: 10px;
+
+	#header-pp {
+
+		#boton-cerrarsesion {
+			width: 25px;
+			height: 25px;
+		}
+	}
+}
