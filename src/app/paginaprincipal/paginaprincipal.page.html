@@ -1,6 +1,6 @@
 <ion-header>
 		<ion-toolbar id="header-pp">
-			<ion-title>Bienvenido Usuario</ion-title>
+			<ion-title>Pagina principal</ion-title>
 			<ion-button slot="end" id="boton-cerrarsesion" (click)="cerrarSesion()">
 				<ion-icon name="close-circle"></ion-icon>
 			</ion-button>
@@ -11,21 +11,22 @@
 	<ion-text>
 		<h1>Ultimos productos agregados</h1>
 	</ion-text>
+	<!-- Slide de imagenes -->
 	<ion-slides pager="true" [options]="slideOpts">
 		<ion-slide>
-			<ion-card>
+			<ion-card (click)="irInfoArticulo()">
 				<img src="../../assets/images/7927702_1.jpeg" alt="" />
 				<ion-title color="dark">Ventilador</ion-title>
 			</ion-card>
 		</ion-slide>
 		<ion-slide>
-			<ion-card>
+			<ion-card (click)="irInfoArticulo()">
 				<img src="../../assets/images/84.jpg" alt="" />
 				<ion-title color="dark">Mesa</ion-title>
 			</ion-card>
 		</ion-slide>
 		<ion-slide>
-			<ion-card>
+			<ion-card (click)="irInfoArticulo()">
 				<img
 					src="../../assets/images/CB190R-repsol_grande.png"
 					alt=""
@@ -34,7 +35,7 @@
 			</ion-card>
 		</ion-slide>
 		<ion-slide>
-			<ion-card>
+			<ion-card (click)="irInfoArticulo()">
 				<img
 					src="../../assets/images/D_889826-MLA47230609712_082021-O.jpg"
 					alt=""

@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'agregarproducto',
     loadChildren: () => import('./agregarproducto/agregarproducto.module').then( m => m.AgregarproductoPageModule)
   },
+  {
+    path: 'pantallaejecutivos',
+    loadChildren: () => import('./pantallaejecutivos/pantallaejecutivos.module').then( m => m.PantallaejecutivosPageModule)
+  },
 ];
 
 @NgModule({

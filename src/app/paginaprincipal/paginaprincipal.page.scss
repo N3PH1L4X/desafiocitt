@@ -1,9 +1,10 @@
 /* Without setting height the slides will take up the height of the slide's content */
 ion-slides {
 	margin-top: 10px;
-	max-height: 45%;
+	max-height: 45%!important;
 
 	ion-slide {
+
 		ion-card {
 			height: 250px;
 			min-width: 350px;

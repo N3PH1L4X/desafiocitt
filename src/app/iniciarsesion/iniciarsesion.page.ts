@@ -17,4 +17,8 @@ export class IniciarsesionPage implements OnInit {
     this.route.navigate(['paginaprincipal']);
   }
 
+  irPantallaEjecutivos(){
+    this.route.navigate(['pantallaejecutivos']);
+  }
+
 }
