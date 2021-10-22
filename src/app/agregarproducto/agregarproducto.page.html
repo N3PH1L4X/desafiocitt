@@ -1,13 +1,48 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Agregar productos</ion-title>
-    <!-- Boton para regresar, se muestra solo si hay historial -->
+	<ion-toolbar>
+		<ion-title>Agregar productos</ion-title>
+		<!-- Boton para regresar, se muestra solo si hay historial -->
 		<ion-buttons slot="start">
 			<ion-back-button icon="arrow-back"></ion-back-button>
 		</ion-buttons>
-  </ion-toolbar>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+	<!-- Formulario -->
+	<form>
+		<ion-item>
+			<ion-label>Fabricante</ion-label>
+			<ion-input
+				type="text"
+				placeholder="Lenovo, Sony, etc..."
+			></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Nombre</ion-label>
+			<ion-input
+				type="text"
+				placeholder="Notebook Modelo XXXX"
+			></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Descripcion del producto</ion-label>
+			<ion-input
+				type="text"
+				placeholder="Potente notebook color blanco, etc..."
+			></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Valor</ion-label>
+			<ion-input type="text" placeholder="$350.000"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Categoria</ion-label>
+			<ion-input
+				type="text"
+				placeholder="Tecnologia, hogar, jardin, etc..."
+			></ion-input>
+		</ion-item>
+		<ion-button expand="block" shape="round"> Iniciar sesion </ion-button>
+	</form>
 </ion-content>
